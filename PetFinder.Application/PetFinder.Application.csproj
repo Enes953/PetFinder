@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\ContactInformations\Constants\" />
+    <Folder Include="Features\ContactInformations\Rules\" />
+    <Folder Include="Features\Locations\Constants\" />
+    <Folder Include="Features\Locations\Rules\" />
+    <Folder Include="Features\Pets\Constants\" />
+    <Folder Include="Features\Pets\Rules\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PetFinder.Core\PetFinder.Core.csproj" />
+    <ProjectReference Include="..\PetFinder.Domain\PetFinder.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
